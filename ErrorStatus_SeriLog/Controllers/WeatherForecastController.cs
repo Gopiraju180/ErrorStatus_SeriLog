@@ -31,7 +31,7 @@ namespace ErrorStatus_SeriLog.Controllers
                 Log.Debug("WeatherForecastController.Sample Result is:" + result);
                 Log.Information("WeatherForecastController.GetApi method Execution Completed");
 
-                throw new Exception("Not a valid exception");
+               // throw new Exception("Not a valid exception");
                 return Enumerable.Range(1, 5).Select(index => new WeatherForecast
                 {
                     Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
